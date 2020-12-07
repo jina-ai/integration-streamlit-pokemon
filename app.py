@@ -15,8 +15,9 @@ logo_html = """
 <strong>Search Pokemon with</strong><br>
 <img src='https://raw.githubusercontent.com/jina-ai/jina/master/.github/logo-only.gif' width=300 style='margin-bottom: 2em'>
 <p>
-Simply upload an image or draw a sketch of your favorite Pokemon, and Jina's neural search framework will use AI to find the closest match!
-</center>
+Upload an image or draw a Pokemon, and Jina's neural search framework will use AI to find the closest match!
+<p>
+    </center>
 """
 
 media_option = ["image", "draw"]
@@ -30,8 +31,7 @@ media = st.sidebar.selectbox(label="Search by", options=[i.capitalize() for i in
 # st.experimental_set_query_params(**app_state)
 
 # endpoint_default = app_state["endpoint"] if "endpoint" in app_state else Defaults.endpoint
-# endpoint = st.sidebar.text_input("Endpoint", value=Defaults.endpoint)
-endpoint = Defaults.endpoint
+# endpoint = Defaults.endpoint
 # app_state["endpoint"] = endpoint
 # st.experimental_set_query_params(**app_state)
 
@@ -70,6 +70,8 @@ elif media == "Draw":
         key="canvas",
     )
 
+st.sidebar.markdown('#### Advanced options')
+endpoint = st.sidebar.text_input("Endpoint", value=Defaults.endpoint)
 
 if st.button("Search"):
     if media == "Text":
