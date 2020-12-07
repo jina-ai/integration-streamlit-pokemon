@@ -11,7 +11,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Jina + Streamlit
+# Jina + Streamlit Pokemon Search
 
 A [Streamlit](http://www.streamlit.io) front-end for searching Pokemon with [Jina](http://www.jina.ai)'s neural search framework.
 
