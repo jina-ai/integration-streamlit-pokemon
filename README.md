@@ -13,25 +13,19 @@
 
 # Jina + Streamlit
 
-A more comprehensive [Streamlit](http://www.streamlit.io) front-end for [Jina](http://www.jina.ai) neural search framework.
+A [Streamlit](http://www.streamlit.io) front-end for searching Pokemon with [Jina](http://www.jina.ai)'s neural search framework.
+
+**Note:** You may find our [advanced Streamlit front-end](https://github.com/jina-ai/integration-streamlit-advanced/) more usable
 
 ## 1. Clone repo, install requirements
 
 ```bash
-git clone https://github.com/alexcg1/jina-streamlit-frontend.git
-cd jina-streamlit-frontend
+git clone git@github.com:jina-ai/integration-streamlit-pokemon.git
+cd integration-streamlit-pokemon
 pip install -r requirements.txt
 ```
 
 ## 1. Run Docker image
-
-For text:
-
-```bash
-docker run -p 45678:45678 jinaai/hub.app.distilbert-southpark
-```
-
-For image:
 
 ```bash
 docker run -p 65481:65481 -e "JINA_PORT=65481" jinaai/hub.app.bitsearch-pokedex search
@@ -45,29 +39,11 @@ streamlit run app.py
 
 ## 4. Set endpoint
 
-Use whatever Docker says is the right URL and port (in examples above, `45678` or `65481`)
+Use whatever Docker says is the right URL and port (in example above, `65481`)
 
 ![](.github/images/endpoint.png)
 
 ## 5. Search!
 
-<table>
-<tr>
-<td>Text</td>
-<td>Image</td>
-<td>Draw</td>
-</tr>
-
-
-<tr>
-<td>
-<img src=".github/images/text.gif" width=300>
-</td>
-<td>
 <img src=".github/images/image.gif" width=300>
-</td>
-<td>
 <img src=".github/images/draw.gif" width=300>
-</td>
-</tr>
-</table>
