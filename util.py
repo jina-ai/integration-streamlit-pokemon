@@ -89,6 +89,8 @@ class Defaults:
     error = "**Error**: Please check your endpoint is available and that your media type is correct"
     jina_text = """
     <center>
+    Want to search other text, graphics, audio, or video? Check out our <strong><a href="https://github.com/jina-ai/jina/">GitHub repo</a></strong> to learn how!
+    <p><p>
     <a href="https://www.github.com/jina-ai/jina">Jina on GitHub</a> •
     <a href="https://github.com/jina-ai/jina/tree/master/docs/chapters/101">Jina 101</a> •
     <a href="https://github.com/jina-ai/jina/tree/master/docs/chapters/101">Jina 101</a> •
