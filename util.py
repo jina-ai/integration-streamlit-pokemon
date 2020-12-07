@@ -91,6 +91,8 @@ class Defaults:
     <center>
     <a href="https://www.github.com/jina-ai/jina">Jina on GitHub</a> •
     <a href="https://github.com/jina-ai/jina/tree/master/docs/chapters/101">Jina 101</a> •
-    <a href="https://github.com/jina-ai/integration-streamlit-advanced/">Code for This Project</a>
+    <a href="https://github.com/jina-ai/jina/tree/master/docs/chapters/101">Jina 101</a> •
+    <a href="https://github.com/jina-ai/examples/tree/master/pokedex-with-bit">Buid your own Pokemon Search</a> •
+    <a href="https://github.com/jina-ai/integration-streamlit-pokemon/">Code for this Project</a>
     <center>
     """
